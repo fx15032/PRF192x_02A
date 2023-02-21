@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./pj4.css">
+</head>
+<body>
+    <div class="container-fluid hide-item" id="model">
+        <div>
+            <button type="button" class="btn-close">x</button>
+        </div>
+        <div style="width: 100%; text-align: center;">
+            <input form="search-model" type="text" placeholder="Search on my news" id="input-model" autofocus>
+            <button type="submit" id="search-btn">search</button>
+        </div>
+    </div>
+    <div class="container-fluid " id="body-div"> 
+        <div class="row-menu" id="menu" >
+            <h1>My news</h1>
+            <form class="form-search">
+                <input placeholder="Search on my news" id="input-menu" class="input-menu"></input>
+            </form>
+        </div>
+        <main style="z-index: 1; position: absolute; padding-top: 1rem; width: 100%;">
+            <div class="loading">
+                <img src="./200.gif">
+            </div>
+            <div class="newsList"></div>
+        </main>
+    </div>
+    <script type="text/javascript" src="./jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="./pj4.js"></script>
+</body>
+</html>
